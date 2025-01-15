@@ -19,9 +19,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        width: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/splash.jpg"),
+            image: AssetImage("assets/images/splash_screen.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -32,6 +33,32 @@ class _HomePageState extends State<HomePage> {
               colors: [
                 Colors.black.withOpacity(.9),
                 Colors.black.withOpacity(.3)
+              ],
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Brand New Perspective',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 40,
+                  ),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  'Brand New Perspective',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 40,
+                  ),
+                ),
               ],
             ),
           ),
