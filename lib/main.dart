@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:page_transition/page_transition.dart';
 
 import 'pages/create_account.dart';
 import 'pages/shop.dart';
@@ -91,6 +90,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 const SizedBox(
                   height: 80,
                 ),
+                // Button untuk lanjut ke halaman utama
                 GestureDetector(
                   onTap: () {
                     debugPrint("berhasil di klik");
@@ -119,6 +119,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 SizedBox(
                   height: 20,
                 ),
+                // Button untuk buat akun
                 GestureDetector(
                   onTap: () {
                     debugPrint("berhasil di klik");
