@@ -202,6 +202,7 @@ class _ShopState extends State<Shop> {
                       ],
                     ),
                   ),
+                  const SizedBox(height: 20),
                 ],
               ),
             )

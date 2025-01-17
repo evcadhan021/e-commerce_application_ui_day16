@@ -5,6 +5,10 @@ class CreateAccount extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Container(
+        color: const Color.fromARGB(255, 197, 108, 138),
+      ),
+    );
   }
 }
