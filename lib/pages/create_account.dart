@@ -8,6 +8,16 @@ class CreateAccount extends StatelessWidget {
     return Scaffold(
       body: Container(
         color: const Color.fromARGB(255, 197, 108, 138),
+        child: Container(
+          child: Row(
+            children: [
+              Icon(
+                Icons.arrow_back,
+                color: Colors.white,
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
