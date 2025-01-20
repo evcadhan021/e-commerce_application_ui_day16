@@ -1,6 +1,6 @@
+import 'package:ecommerce_application_ui_day16/pages/login.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/create_account.dart';
 import 'pages/shop.dart';
 
 void main() {
@@ -18,32 +18,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
-  // late AnimationController _scaleController;
-  // late Animation<double> _scaleAnimation;
-
-  // bool hide = false;
-
-  // @override
-  // void initState() {
-  //   super.initState();
-
-  //   _scaleController = AnimationController(
-  //     vsync: this,
-  //     duration: const Duration(milliseconds: 400),
-  //   );
-
-  //   _scaleAnimation = Tween<double>(begin: 1.0, end: 30)
-  //       .animate(_scaleController)
-  //     ..addStatusListener((status) {
-  //       if (status == AnimationStatus.completed) {
-  //         Navigator.pushReplacement(
-  //           context,
-  //           PageTransition(type: PageTransitionType.fade, child: const Shop()),
-  //         );
-  //       }
-  //     });
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -126,8 +100,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     setState(() {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const CreateAccount()),
+                        MaterialPageRoute(builder: (context) => Login()),
                       );
                     });
                   },
