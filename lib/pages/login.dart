@@ -31,7 +31,7 @@ class _LoginState extends State<Login> {
               color: Colors.white,
             ),
             const SizedBox(
-              height: 100,
+              height: 60,
             ),
             Expanded(
               child: Container(
@@ -45,8 +45,10 @@ class _LoginState extends State<Login> {
                 child: Padding(
                   padding: const EdgeInsets.all(10),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 15),
                       const Text(
                         "E-commerce \n rmmdh.n",
                         textAlign: TextAlign.center,
@@ -58,7 +60,7 @@ class _LoginState extends State<Login> {
                           color: Colors.white,
                         ),
                       ),
-                      const SizedBox(height: 40),
+                      const SizedBox(height: 30),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -131,13 +133,48 @@ class _LoginState extends State<Login> {
                                       ))),
                             ),
                           ),
+                          const SizedBox(height: 40),
+                          Container(
+                            height: 50,
+                            width: 300,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(30),
+                                  topRight: Radius.circular(30)),
+                              color: Color.fromARGB(255, 0, 26, 47),
+                            ),
+                            child: const Center(
+                              child: Text(
+                                'Login',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 70,
+                          )
                         ],
+                      ),
+                      const Text(
+                        "Don't Have any account? Sign up",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 20,
                       )
                     ],
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
