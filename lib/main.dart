@@ -1,7 +1,7 @@
-import 'package:ecommerce_application_ui_day16/pages/login.dart';
+import 'package:ecommerce_application_ui_day16/view/login.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/shop.dart';
+import 'view/shop.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     setState(() {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Login()),
+                        MaterialPageRoute(builder: (context) => const Login()),
                       );
                     });
                   },
